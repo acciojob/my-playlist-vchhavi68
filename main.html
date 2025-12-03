@@ -4,10 +4,78 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	 <style>
+        body {
+            background-color: rgb(204, 204, 204);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Heading styles */
+        h1, h2 {
+            text-align: center;
+        }
+
+        /* Playlist styles */
+        ul {
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+            margin: 5px 0;
+        }
+
+        a {
+            text-decoration-line: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        /* Player containers */
+        .player_one, .player_two {
+            background-color: rgb(255, 255, 255);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	 <h1>My Playlist</h1>
+    
+    <!-- Songs Playlist -->
+    <ul>
+        <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 1</a></li>
+        <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 2</a></li>
+        <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 3</a></li>
+        <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 4</a></li>
+        <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 5</a></li>
+    </ul>
+	<h2>Now Playing...</h2>
+
+    <!-- Video Player -->
+    <div class="player_two">
+        <h3>Video Player</h3>
+        <video width="100%" controls>
+            <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+		<h2>MP3 songs</h2>
+        <h3>Audio Player</h3>
+        <audio controls>
+            <source src="https://www.pagalworld.com.se/files/download/id/64630" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+	
+
     <script type="text/javascript" src="./script.js">
 </script>
 
